@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "5cdee93f-2661-45a3-9340-2cbdd07a5ed6",
+		"name": "FastApi-Taller4-BI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Predict",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"adult_mortality\": \"263\",\r\n  \"infant_deaths\": \"62\",\r\n  \"alcohol\": \"0.01\",\r\n  \"percentage_expenditure\": \"71.27962362\",\r\n  \"hepatitis_B\": \"65\",\r\n  \"measles\": \"1154\",\r\n  \"bmi\": \"19.1\",\r\n  \"under_five_deaths\": \"83\",\r\n  \"polio\": \"6\",\r\n  \"total_expenditure\": \"8.16\",\r\n  \"diphtheria\": \"65\",\r\n  \"hiv_aids\": \"0.1\",\r\n  \"gdp\": \"584.25921\",\r\n  \"population\": \"33736494\",\r\n  \"thinness_10_19_years\": \"17.2\",\r\n  \"thinness_5_9_years\": \"17.3\",\r\n  \"income_composition_of_resources\": \"0.479\",\r\n  \"schooling\": \"10.1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "R2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n{\r\n\"life_expectancy\": \"65\",\r\n\"adult_mortality\": \"263\",\r\n\"infant_deaths\": \"62\",\r\n\"alcohol\": \"0.01\",\r\n\"percentage_expenditure\": \"71.27962362\",\r\n\"hepatitis_B\": \"65\",\r\n\"measles\": \"1154\",\r\n\"bmi\": \"19.1\",\r\n\"under_five_deaths\": \"83\",\r\n\"polio\": \"6\",\r\n\"total_expenditure\": \"8.16\",\r\n\"diphtheria\": \"65\",\r\n\"hiv_aids\": \"0.1\",\r\n\"gdp\": \"584.25921\",\r\n\"population\": \"33736494\",\r\n\"thinness_10_19_years\": \"17.2\",\r\n\"thinness_5_9_years\": \"17.3\",\r\n\"income_composition_of_resources\": \"0.479\",\r\n\"schooling\": \"10.1\"\r\n},\r\n{\r\n  \"life_expectancy\": \"59.9\",\r\n  \"adult_mortality\": \"271\",\r\n  \"infant_deaths\": \"64\",\r\n  \"alcohol\": \"0.01\",\r\n  \"percentage_expenditure\": \"73.52358168\",\r\n  \"hepatitis_B\": \"62\",\r\n  \"measles\": \"492\",\r\n  \"bmi\": \"18.6\",\r\n  \"under_five_deaths\": \"86\",\r\n  \"polio\": \"58\",\r\n  \"total_expenditure\": \"8.18\",\r\n  \"diphtheria\": \"62\",\r\n  \"hiv_aids\": \"0.1\",\r\n  \"gdp\": \"612.696514\",\r\n  \"population\": \"327582\",\r\n  \"thinness_10_19_years\": \"17.5\",\r\n  \"thinness_5_9_years\": \"17.5\",\r\n  \"income_composition_of_resources\": \"0.476\",\r\n  \"schooling\": \"10\"\r\n},\r\n{\r\n  \"life_expectancy\": \"73.6\",\r\n  \"adult_mortality\": \"14\",\r\n  \"infant_deaths\": \"1\",\r\n  \"alcohol\": \"4.25\",\r\n  \"percentage_expenditure\": \"96.20557078\",\r\n  \"hepatitis_B\": \"96\",\r\n  \"measles\": \"18\",\r\n  \"bmi\": \"46\",\r\n  \"under_five_deaths\": \"1\",\r\n  \"polio\": \"97\",\r\n  \"total_expenditure\": \"6\",\r\n  \"diphtheria\": \"97\",\r\n  \"hiv_aids\": \"0.1\",\r\n  \"gdp\": \"1326.97339\",\r\n  \"population\": \"36173\",\r\n  \"thinness_10_19_years\": \"2.1\",\r\n  \"thinness_5_9_years\": \"2.1\",\r\n  \"income_composition_of_resources\": \"0.662\",\r\n  \"schooling\": \"10.6\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/r2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"r2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
